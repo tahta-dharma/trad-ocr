@@ -6,38 +6,59 @@ This project focuses on classical image preprocessing + OCR engines rather than 
 ---
 ## ⚙️ Requirements
 ### Install Tesseract OCR
-macOS
+**macOS**
+```bash
 brew install tesseract
+```
 
-Ubuntu / Debian
+**Ubuntu / Debian**
+```bash
 sudo apt install tesseract-ocr
+```
 
-Windows
+**Windows**
+```bash
 https://github.com/tesseract-ocr/tesseract
+```
 
 ---
 ## ⚙️ Installation
 ### 1. Clone the repository
+```bash
 https://github.com/tahta-dharma/trad-ocr.git
+```
 
 ### 2. Create virtual environment
+```bash
 python3 -m venv venv
+```
 
 
 ### 3. Run virtual environtment
-macOS / Linux
+**macOS / Linux**
+```bash
 source venv/bin/activate
+```
 
-Windows
+**Windows**
+```bash
 venv\Scripts\activate
+```
 
 ### 4. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 5. Run FastAPI
+```bash
 uvicorn app.main:app --reload
+```
 
-then access to swagger ui /docs
+then access to swagger ui
+```bash
+http://localhost:8000/docs
+```
 
 ---
 
